@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Inregistrare Animale</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <h1>Inregistrare Animale</h1>
+    <p>Completeaza formulare de mai jos pentru inregistrarea animalului la clinica.</p>
+    <form action="inregistrare">
+
+        <div class="specify">
+            <label for="stapan">Nume Stapan:</label>
+            <input type="text" id="stapan" name="stapan"><br><br>
+            <label for="telefon">Numar Telefon:</label>
+            <input type="text" id="telefon" name="telefon"><br><br>
+            <label for="animal">Nume Animal:</label>
+            <input type="text" id="animal" name="animal"><br><br>
+        </div>
+        
+        <div class="specify">
+
+            <label for="specie">Specie:</label>
+            <select id="specie" name="specie">
+            <option value="caine">Caine</option>
+            <option value="pisica">Pisica</option>
+            <option value="iepure">Iepure</option>
+            <option value="altul">Altul</option>
+             </select><br><br>
+
+            <label for="sex">Sex:</label>
+            <input type="radio" id="masculin" name="sex" value="masculin">Masculin
+            <input type="radio" id="feminin" name="sex" value="feminin">Feminin<br><br>
+        </div>
+        
+        <div class="specify">
+            <label for="servicii">Servicii dorite:</label><br>
+            <input type="checkbox" name="servicii" value="consultatie">Consultatie<br>
+            <input type="checkbox" name="servicii" value="vaccinare">Vaccinare<br>
+            <input type="checkbox" name="servicii" value="sterilizare">Sterilizare<br>
+            <br><br>
+            
+            <label for="observatii">Observatii suplimentare:</label><br>
+            <textarea id="observatii" name="observatii" rows="4" cols="50"></textarea><br><br>
+        </div>
+        
+        <button type="submit">Inregistreaza Animalul</button>
+        <button type="reset">Reseteaza Formularul</button>
+    
+    </form>
+
+</body>
