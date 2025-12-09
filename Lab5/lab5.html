@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular Contact</title>
+    <style>
+        body { font-family: sans-serif; max-width: 600px; margin: 2rem auto; padding: 1rem; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input, textarea { width: 100%; padding: 8px; box-sizing: border-box; }
+        button { padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+
+    <h2>Trimite un mesaj</h2>
+    
+    <form action="file.php" method="POST">
+        <div class="form-group">
+            <label for="nume">Nume (minim 3 caractere):</label>
+            <input type="text" name="nume" id="nume" placeholder="Numele tău">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" placeholder="exemplu@email.com">
+        </div>
+
+        <div class="form-group">
+            <label for="mesaj">Mesaj (minim 10 caractere):</label>
+            <textarea name="mesaj" id="mesaj" rows="5" placeholder="Scrie mesajul aici..."></textarea>
+        </div>
+
+        <button type="submit">Trimite</button>
+    </form>
+
+</body>
+</html>
